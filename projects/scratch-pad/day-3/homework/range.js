@@ -24,8 +24,24 @@
 function range(start, end) {
     // YOUR CODE GOES BELOW HERE //
     
+    let arri = [];
+    
+    if (start < end){
+        
+        for (let i = start; i <= end; i++){
+            arri.push(i);
+        }
+        
+    } else if (start > end){
+        
+        for (let i = start; i >= end; i--){
+            arri.push(i);
+        }
+        
+    }
     
     
+    return arri;
     
     // YOUR CODE GOES ABOVE HERE //
 }
