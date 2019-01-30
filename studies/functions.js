@@ -31,9 +31,10 @@
  *                  body
  *              }
  * 
- * c) First-Class Functions - > In Javascript all functions are first class 
- *    meaning they can be inside other functions, they can be a function 
- *    parameter and also the return value of a function. To make code more 
+ * c) First-Class Functions - > In Javascript all functions can be first class 
+ *    meaning that they can be a parameter of another function or also be the return object of
+ *    another function. When a function is simply inside another function we call
+ *    it a nested function, but it is not necessarily first-class.To make code more
  *    compact and readable when passing a function as an argument you can use 
  *    ANONYMOUS and ARROW functions, meaning they are not named and syntax
  *    is much shorter. example: 

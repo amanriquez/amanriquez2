@@ -11,10 +11,18 @@
  *    executing and control passes to statement following loop. You usually also
  *    change something inside the block, like establishing a counter. 
  * 
+ *    It is very important to ensure that the stopping condition will be met
+ *    at some point, otherwise the loop will run infinitely and make your 
+ *    program crash. 
+ * 
  *      syntax:
  * 
  *          while ( condition) {
- *                statement          
+ *                statement      
+ *                  (body also generally includes an update of a certain variable
+ *                  that at some point will evaluate to false when tested by condition,
+ *                  this variable can be declared right before the loop or be anywhere 
+ *                  in scope)
  *            }
  * 
  */// example:
@@ -31,21 +39,31 @@
      
  }
  
- // output: will log output 4 times! but will checked 8 times. 
+ // output: will log output 4 times! but will be checked 8 times. 
  
  
 /**
  * 
- * The FOR loop repeats until a specified condition evaluates to false. First
- * the initial expression is executed, which usually initializes loop counters
- * syntax allows complex expressions and variable declaration. the loop statement
- * executes, until value of condition is false, then the for loop terminates, and
- * so on with the third statement performing an increment. Good to iterate
- * over array data collections. 
+ * The FOR statement creates a loop with three optional expressions and a body
+ * statement:
+ * 
+ * 1) Initial expression or variable declaration - typically initializes a counter
+ * variable. Here you can declare new variables with var or let. if declared with var
+ * this will be in the same scope as the loop and will not be local to the loop.
+ * The result of this expression is then discarded
+ * 2) Condition - the stopping condition, an expression that is evaluated before each
+ * iteration. if it evaluates to true, the statement is executed. if it evaluates to 
+ * false it stops. 'execution skips to the first exression following the for construct'
+ * 3) expression evaluated at the end of each loop iteration, before the next evaluation
+ * of the stopping condition. It is generally used to update the counter variable. 
+ * 
+ * The statement is executed for each iteration as long as the condition evaluates to true. 
+ * 
+ * Good to iterate over array data collections. 
  * 
  *   syntax:
  * 
- *          for (initial expression; condition; increment expression){
+ *          for (initialize expression; stopping condition; expression changes){
  *                      
  *                  statement
  * 

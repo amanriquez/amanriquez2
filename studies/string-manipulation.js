@@ -12,7 +12,7 @@
  
    //////////////////////////////////
  
- String.length; 
+ //String.length; 
  
  /**
   * Returns the lenth property of a string. 
@@ -23,7 +23,7 @@
   
     //////////////////////////////////
   
-  String.prototype.
+  //String.prototype.
  
  /**
   * All string instances inherit from String.prototype, it
@@ -33,7 +33,7 @@
   
     //////////////////////////////////
   
-   String.prototype.indexOf(); 
+  // String.prototype.indexOf(); //
  
  /**
   * Returns the index of the first occurence of a specified value
@@ -42,13 +42,13 @@
   * 
   */// example:
   
-  let str = 'chihuahua';
+ var str = 'chihuahua';
   
-  console.log(str.indexOf('h')); // output: 1
+ console.log(str.indexOf('h')); // output: 1
   
   //////////////////////////////////
   
-   String.prototype.charAt(); 
+  // String.prototype.charAt(); //
  
  /**
   * Returns a new string consisting of the single UTF-16 
@@ -64,7 +64,7 @@
   
     //////////////////////////////////
   
-   String.prototype.concat(); 
+  // String.prototype.concat(); //
  
  /**
   * Combines the text of two or more strings and returns 
@@ -78,9 +78,9 @@
   
   console.log(news); // output: 'exiting'
   
-    //////////////////////////////////
+ /////////////////////////////////////
   
-  String.prototype.replace(); 
+ // String.prototype.replace(); ////
  
  /**
   * Returns a new string with with some or all matches replaced
@@ -103,9 +103,9 @@
 
   
   
-      //////////////////////////////////
+  //////////////////////////////////////
   
-   String.prototype.slice(); 
+  //// String.prototype.slice(); ////
  
  /**
   * Extracts a section of a string and returns it as a new
@@ -131,9 +131,9 @@
   console.log(str6.slice(5, 19)); // output: 'I fear I will'
   
  
-      //////////////////////////////////
+ ////////////////////////////////////////
   
-   String.prototype.split(); 
+ //////  String.prototype.split(); //////
  
  /**
   * splits a string object into an array of substrings by using
@@ -150,10 +150,10 @@
   //output: [ 'Hi', 'I', 'am', 'a', 'beautiful', 'sentence' ]
   
   
-      //////////////////////////////////
+  //////////////////////////////////////////////
   
   
-   String.prototype.toLowerCase(); 
+ //////  String.prototype.toLowerCase(); //////
  
  /**
   * makes all characters in a string lower case, opposite 
@@ -167,9 +167,9 @@
   
   //output: 'teenagers love doing this thank you method'
   
-      //////////////////////////////////
+  ////////////////////////////////////////
   
-   String.prototype.trim(); 
+  ////// String.prototype.trim(); //////
  
  /**
   * Removes white space from both ends of a string
@@ -183,9 +183,9 @@
     
     //  output: "Hello world!";
   
-      //////////////////////////////////
+ ////////////////////////////////////////
   
-  String.prototype.endsWith(); 
+ ////// String.prototype.endsWith();////// 
  
  /**
   * checks if a string ends with a specified character and returns a boolean
@@ -200,10 +200,10 @@
     
     //  output: true
   
-      //////////////////////////////////
+ ////////////////////////////////////////
   
   
-   String.prototype.search(); 
+  ////// String.prototype.search(); //////
  
  /**
   * Finds if a regular expression match is found in a string and 
@@ -218,9 +218,9 @@
   //output: 13
   
   
-      //////////////////////////////////
+ ////////////////////////////////////////
   
-   String.prototype.includes(); 
+ //////  String.prototype.includes(); //////
  
  /**
   * Determines wether a string is included within another string and
@@ -233,7 +233,7 @@
   console.log(stringylingy.includes('canta')); // output: true;
   
   
-      //////////////////////////////////
+  //////////////////////////////////
   
  
  /**

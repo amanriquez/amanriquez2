@@ -2,7 +2,14 @@
 // min /////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
 
-function min() {
+function min(num1, num2) {
+
+
+if (num1 < num2){
+  return num1;
+} else{
+  return num2;
+}
 
 }
 
@@ -10,7 +17,22 @@ function min() {
 // isEven //////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
 
-function isEven() {
+function isEven(num) {
+
+
+if (num === 0) return true;
+
+if (num === 1) return false;
+
+if (num < 0){
+  return isEven(num + 2);
+}
+
+
+
+return isEven(num - 2);
+
+
 
 }
 
@@ -18,7 +40,21 @@ function isEven() {
 // countChars //////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
 
-function countChars() {
+function countChars(string, char) {
+
+let count = 0;
+
+for (let i = 0; i < string.length; i++){
+
+if (string[i] === char){
+  
+  count++;
+}
+  
+}
+
+return count;
+
 
 }
 
@@ -26,7 +62,20 @@ function countChars() {
 // countBs /////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
 
-function countBs() {
+function countBs(string) {
+
+let count = 0;
+
+for (let i = 0; i < string.length; i++){
+
+if (string[i] === 'B'){
+  
+  count++;
+}
+  
+}
+
+return count;
 
 }
 
